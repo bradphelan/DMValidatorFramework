@@ -19,6 +19,7 @@
 
 #import "DMValidator.h"
 #import "DMCondition.h"
+#import "DMConditionCollection.h"
 
 
 @implementation DMValidator
@@ -31,7 +32,7 @@
     self = [super init];
     if (self)
     {
-        _conditions = [[NSMutableArray alloc] init];
+        _conditionCollection = [[DMConditionCollection alloc] init];
     }
     
     return self;
@@ -42,7 +43,7 @@
 
 - (void)dealloc
 {
-    [_conditions release];
+    [_conditionCollection release];
     
     [super dealloc];
 }
@@ -53,10 +54,10 @@
 /**
  * Add condition for validation queue.
  */
-- (void)addCondition:(DMCondition *)condition
+- (void)addCondition:(id<DMCondition>)condition
 {
     if ([condition isKindOfClass:[DMCondition class]])
-        [_conditions addObject:condition];
+        [_conditionCollection addCondition:condition];
     else
         [NSException raise:NSGenericException format:[NSString stringWithFormat:@"Added incompatible condition <%@> to validator.", [condition class]]];
 }
@@ -66,11 +67,10 @@
  */
 - (void)removeConditionOfClass:(id<DMCondition>)conditionClass
 {
-    for (NSUInteger i = 0; i < _conditions.count; i++)
+    for (DMCondition *condition in _conditionCollection)
     {
-        DMCondition *condition = [_conditions objectAtIndex:i];
         if ([condition isKindOfClass:(id)conditionClass])
-            [_conditions removeObject:condition];
+            [_conditionCollection removeCondition:condition];
     }
 }
 
@@ -78,19 +78,23 @@
 #pragma mark - Condition check
 
 /**
- * The order of the added conditions is important, the first added is the most important one.
+ * Returns all violated condition in a DMConditionCollection
  */
-- (DMCondition *)checkConditions:(NSString*)string
+- (DMConditionCollection *)checkConditions:(NSString *)string
 {
-    for (DMCondition *condition in _conditions)
+    DMConditionCollection *violatedConditions = nil;
+    for (DMCondition *condition in _conditionCollection)
     {
         if (NO == [condition check:string])
         {
-            return condition;
+            if (nil == violatedConditions)
+                violatedConditions = [[DMConditionCollection alloc] init];
+            
+            [violatedConditions addCondition:condition];
         }
     }
     
-    return nil;
+    return [violatedConditions autorelease];
 }
 
 

@@ -31,7 +31,7 @@
     self = [super init];
     if (self)
     {
-        [self addCondition:[[DMConditionNumeric alloc] init]];
+        [self addCondition:[[[DMConditionNumeric alloc] init] autorelease]];
     }
     
     return self;

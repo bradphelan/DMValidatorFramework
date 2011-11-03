@@ -26,6 +26,8 @@
 @synthesize allowViolation = _allowViolation;
 
 
+#pragma mark - Check
+
 /**
  * Check the custom condition.
  *
@@ -36,6 +38,9 @@
     return YES;
 }
 
+
+#pragma mark - Localization
+
 /**
  * Returns a localized violation string.
  *
@@ -44,6 +49,26 @@
 - (NSString *)localizedViolationString
 {
     return nil;
+}
+
+
+#pragma mark - Description
+
+/**
+ * Returns the description
+ *
+ * @return Description string
+ */
+- (NSString *)description
+{
+    NSMutableString *description = [[NSMutableString new] autorelease];
+    [description appendString:@"<"];
+    [description appendString:[super description]];
+    [description appendString:[NSString stringWithFormat:@"\n <localizedViolationString: %@>", self.localizedViolationString]];
+    [description appendString:[NSString stringWithFormat:@"\n <allowViolation: %@>", _allowViolation == 0 ? @"YES" : @"NO"]];
+    [description appendString:@">"];
+    
+    return description;
 }
 
 

@@ -33,7 +33,7 @@
 @optional
 - (void)validatorTextFieldDidChange:(DMValidatorTextField *)validatorTextField;
 - (void)validatorTextField:(DMValidatorTextField *)validatorTextField changedValidState:(BOOL)isValid;
-- (void)validatorTextField:(DMValidatorTextField *)validatorTextField violatedCondition:(DMCondition *)condition;
+- (void)validatorTextField:(DMValidatorTextField *)validatorTextField violatedConditions:(DMConditionCollection *)conditions;
 
 @end
 
@@ -45,7 +45,7 @@
 
 @protocol DMValidatorTextFieldDelegateDelegate <NSObject>
 
-- (void)validatorTextFieldDelegate:(DMValidatorTextFieldDelegate*)delegate violatedCondition:(DMCondition *)condition;
+- (void)validatorTextFieldDelegate:(DMValidatorTextFieldDelegate*)delegate violatedConditions:(DMConditionCollection *)conditions;
 - (void)validatorTextFieldDelegateSuccededConditions:(DMValidatorTextFieldDelegate*)delegate;
 
 @end
@@ -59,14 +59,11 @@
     id<DMValidatorTextFieldDelegate> _originDelegate;
     DMValidator                      *_validator;
     DMValidatorTextFieldDelegate     *_validatorTextFieldDelegate;
-    UIView                           *_violationView;
-    UIView                           *_textView;
     BOOL                             _allowViolation;
     BOOL                             _validateAfterEditing;
     BOOL                             _didEndEditing;
-    BOOL                             _wasLayouted;
-    UIColor                          *_theBackgroundColor;
-    UIColor                          *_violationColor;
+    UIColor                          *_validTextColor;
+    UIColor                          *_invalidTextColor;
 }
 
 /**
@@ -103,9 +100,9 @@
 @property (nonatomic, assign) BOOL validateAfterEditing;
 
 /**
- * Set the color of the border on invalid state.
+ * Set the color of the text on invalid state.
  */
-@property (nonatomic, retain) UIColor *violationColor;
+@property (nonatomic, retain) UIColor *invalidTextColor;
 
 /**
  * Validate text field manually.

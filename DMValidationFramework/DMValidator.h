@@ -18,12 +18,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DMCondition.h"
+#import "DMConditionCollection.h"
 
 
-#pragma mark - Base validator protocol
+#pragma mark - Validator protocol
 
 @protocol DMCondition;
-@class    DMCondition;
+@protocol DMConditionCollection;
 
 
 @protocol DMValidator <NSObject>
@@ -33,7 +35,7 @@
  *
  * @param: Condition subclass of DMCondition
  */
-- (void)addCondition:(DMCondition *)condition;
+- (void)addCondition:(id<DMCondition>)condition;
 
 /**
  * Remove all conditions subclassing conditionClass from validation queue.
@@ -47,17 +49,20 @@
  *
  * @return: Returns whether all conditions were successful.
  */
-- (DMCondition *)checkConditions:(NSString*)string;
+- (DMConditionCollection *)checkConditions:(NSString *)string;
 
 @end
 
 
-#pragma mark - Base validator interface
+#pragma mark - Validator interface
+
+@class DMConditionCollection;
+
 
 @interface DMValidator : NSObject <DMValidator>
 {
 @private
-    NSMutableArray *_conditions;
+    DMConditionCollection *_conditionCollection;
 }
 
 

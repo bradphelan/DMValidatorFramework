@@ -31,7 +31,7 @@
     self = [super init];
     if (self)
     {
-        [self addCondition:[[MyProjectConditionPostcodeUK alloc] init]];
+        [self addCondition:[[[MyProjectConditionPostcodeUK alloc] init] autorelease]];
     }
     
     return self;

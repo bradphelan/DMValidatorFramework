@@ -26,10 +26,12 @@
 - (BOOL)check:(NSString *)string
 {    
     NSError *error             = NULL;
-    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"^([0-9a-zA-Z]([-.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$" options:0 error:&error];
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"^([0-9a-zA-Z]([-.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$" options:NSRegularExpressionCaseInsensitive error:&error];
     NSUInteger numberOfMatches = [regex numberOfMatchesInString:string options:0 range:NSMakeRange(0, [string length])];
     
-    return numberOfMatches > 0;
+    return numberOfMatches == 1;
+    
+    // rangeoffirstmatchinstring
 }
 
 
@@ -45,7 +47,7 @@
 
 - (NSString *)localizedViolationString
 {
-    return NSLocalizedString(@"keyConditionViolationEmail", nil);
+    return NSLocalizedString(@"DMKeyConditionViolationEmail", nil);
 }
 
 

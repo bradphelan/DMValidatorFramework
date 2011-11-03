@@ -17,8 +17,25 @@
 //  limitations under the License.
 //
 
-#import <Foundation/Foundation.h>
+/**
+ * The DMConditionRange validates the length of a string.
+ *
+ * Usage:
+ *
+ * NSString *testString = @"a valid string";
+ *
+ * DMConditionRange *rangeCondition = [[DMConditionRange alloc] init];
+ * rangeCondition.range = NSMakeRange(3, 12);
+ *
+ * DMValidator *rangeValidator = [[DMValidator alloc] init];
+ * [rangeValidator addCondition:rangeCondition];
+ * [rangeCondition release];
+ *
+ * BOOL isValid = [rangeValidator checkConditions:testString] == nil;
+ *
+ */
 
+#import <Foundation/Foundation.h>
 #import "DMCondition.h"
 
 

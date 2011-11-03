@@ -45,7 +45,7 @@
 
 - (NSString *)localizedViolationString
 {
-    return NSLocalizedString(@"keyConditionViolationAlphanumeric", nil);
+    return NSLocalizedString(@"DMKeyConditionViolationAlphanumeric", nil);
 }
 
 

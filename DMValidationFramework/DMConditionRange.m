@@ -31,7 +31,7 @@
     self = [super init];
     if (self)
     {
-        _range = NSMakeRange(0, 15);
+        _range = NSMakeRange(0, 0);
     }
     
     return self;
@@ -42,6 +42,13 @@
 
 - (BOOL)check:(NSString *)string
 {
+    if (0 == _range.location
+        && 0 == _range.length)
+        return YES;
+    
+    if (nil == string)
+        string = [NSString string];
+    
     NSError *error             = NULL;
     NSString* regexString      = [NSString stringWithFormat:@"^.{%d,%d}$", _range.location, _range.length];
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:regexString options:0 error:&error];
@@ -55,7 +62,7 @@
 
 - (NSString *)localizedViolationString
 {
-    return [NSString stringWithFormat:NSLocalizedString(@"keyConditionViolationRange", nil), _range.location, _range.length];
+    return [NSString stringWithFormat:NSLocalizedString(@"DMKeyConditionViolationRange", nil), _range.location, _range.length];
 }
 
 

@@ -1,6 +1,6 @@
 //
-//  DMValidatorEmail.m
-//  DMValidationFramework
+//  ConditionUnitTests.h
+//  DMValidationFrameworkUnitTests
 //
 //  Copyright 2011 Martin Stolz
 //
@@ -17,25 +17,10 @@
 //  limitations under the License.
 //
 
-#import "DMValidatorEmail.h"
-#import "DMConditionEmail.h"
+#import <SenTestingKit/SenTestingKit.h>
 
 
-@implementation DMValidatorEmail
-
-
-#pragma mark - Initialization
-
-- (id)init
-{
-    self = [super init];
-    if (self)
-    {
-        [self addCondition:[[[DMConditionEmail alloc] init] autorelease]];
-    }
-    
-    return self;
-}
+@interface ConditionUnitTests : SenTestCase
 
 
 @end

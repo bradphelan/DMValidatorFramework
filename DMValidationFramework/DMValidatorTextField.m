@@ -35,7 +35,7 @@
 @synthesize validator            = _validator;
 @synthesize allowViolation       = _allowViolation;
 @synthesize validateAfterEditing = _validateAfterEditing;
-@synthesize violationColor       = _violationColor;
+@synthesize invalidTextColor     = _invalidTextColor;
 @dynamic    isValid;
 
 
@@ -57,8 +57,7 @@
 
 - (void)dealloc
 {
-    self.validator      = nil;
-    self.violationColor = nil;
+    self.validator = nil;
     
     [_validatorTextFieldDelegate release];
     
@@ -70,9 +69,6 @@
 
 - (void)startUp
 {
-    // Remember whether text field was layouted once
-    _wasLayouted = NO;
-    
     // Allows violation initially
     _allowViolation = YES;
     
@@ -81,8 +77,6 @@
     
     // Text field did not end editing at start
     _didEndEditing = NO;
-    
-    self.clipsToBounds = NO;
     
     // Create listening instance 
     _validatorTextFieldDelegate = [[DMValidatorTextFieldDelegate alloc] init];
@@ -95,61 +89,8 @@
     // Listen for end of editing
     [[NSNotificationCenter defaultCenter] addObserver:self selector: @selector(textFieldDidEndEditing:) name:UITextFieldTextDidEndEditingNotification object:self];
     
-    // Set initial background color
-    self.backgroundColor = [UIColor whiteColor];
-    
     // Set initial violation color
-    self.violationColor = [UIColor redColor];
-}
-
-/**
- * Due to there is no known chance of creating a border which is animatable
- * this approach adds a 'violation view' which marks the violation visually.
- * Due to the ordering of the views in iOS a new text view must be added as
- * the new background.
- * The 'textInputView' bounds are set once avoiding a loop of 'layoutSubiviews'
- */
-- (void)layoutSubviews
-{
-    [super layoutSubviews];
-    
-    CGFloat borderWidth = 2.0f;
-    if (_wasLayouted == NO)
-    {
-        _wasLayouted = YES;
-
-        // Add violation view which marks the violation as a border
-        _violationView = [[UIView alloc] init];
-        _violationView.backgroundColor = _theBackgroundColor;
-        _violationView.userInteractionEnabled = NO;
-        [self insertSubview:_violationView atIndex:0];
-        [_violationView release];
-        
-        self.textInputView.bounds = CGRectMake(borderWidth,
-                                               borderWidth,
-                                               self.bounds.size.width - borderWidth * 2,
-                                               self.bounds.size.height - borderWidth * 2);
-        
-        // Add text view which works as the new background
-        _textView                 = [[UIView alloc] init];
-        _textView.backgroundColor = _theBackgroundColor;
-        _textView.userInteractionEnabled = NO;
-        [_violationView addSubview:_textView];
-        [_textView release];
-    }
-    
-    _violationView.frame = CGRectMake(0.0,
-                                      0.0,
-                                      self.bounds.size.width + borderWidth * 2,
-                                      self.bounds.size.height + borderWidth * 2);
-    
-    _textView.frame = self.textInputView.bounds;
-}
-
-- (void)setBackgroundColor:(UIColor *)backgroundColor
-{
-    _theBackgroundColor = backgroundColor;
-    super.backgroundColor = backgroundColor;
+    self.invalidTextColor = [UIColor redColor];
 }
 
 
@@ -175,6 +116,21 @@
 }
 
 
+#pragma mark - Set text color
+
+- (void)setTextColor:(UIColor *)textColor
+{
+    _validTextColor = textColor;
+    
+    [super setTextColor:textColor];
+}
+
+- (UIColor *)textColor
+{
+    return _validTextColor;
+}
+
+
 
 #pragma mark - Is valid
 
@@ -191,8 +147,8 @@
  */
 - (void)validate
 {
-    DMCondition *condition = [_validator checkConditions:self.text];    
-    if (condition == nil)
+    DMConditionCollection *conditions = [_validator checkConditions:self.text];    
+    if (conditions == nil)
         [self setValidMode];
     else
         [self setInvalidMode];
@@ -204,28 +160,31 @@
 /**
  * After occurring violations the UI will be changed.
  */
-- (void)validatorTextFieldDelegate:(DMValidatorTextFieldDelegate*)delegate violatedCondition:(DMCondition *)condition
+- (void)validatorTextFieldDelegate:(DMValidatorTextFieldDelegate*)delegate violatedConditions:(DMConditionCollection *)conditions
 {
+    // Show visual info about violation if text field was left or violation is not allowed
     if ((NO == _allowViolation
-         || NO == [condition allowViolation])
+         || NO == [conditions conditionAtIndex:0].allowViolation)
         || YES == _didEndEditing
         || NO == _validateAfterEditing)
     {
         [self setInvalidMode];
     }
     
+    // Hide visual info about violation after some time.
     if (NO == _allowViolation
-        || NO == [condition allowViolation])
+        || NO == [conditions conditionAtIndex:0].allowViolation)
     {
-        [UIView animateWithDuration:0.1f
-                              delay:0.5f
-                            options:UIViewAnimationOptionCurveEaseInOut
-                         animations:^{
-                             _violationView.backgroundColor = _theBackgroundColor;
-                         }
-                         completion:^(BOOL finished) {
-                         }];
+        [NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector(timerPassed:) userInfo:nil repeats:NO];
     }
+}
+
+/**
+ * Hide visual info about violation after some time.
+ */
+- (void)timerPassed:(NSTimer *)timer
+{
+    [self setValidMode];
 }
 
 /**
@@ -233,14 +192,8 @@
  */
 - (void)setInvalidMode
 {
-    [UIView animateWithDuration:0.1f
-                          delay:0.0f
-                        options:UIViewAnimationOptionCurveEaseInOut
-                     animations:^{
-                         _violationView.backgroundColor = _violationColor;
-                     }
-                     completion:^(BOOL finished) {
-                     }];
+    _validTextColor = self.textColor;
+    super.textColor = _invalidTextColor;
 }
 
 /**
@@ -248,14 +201,7 @@
  */
 - (void)setValidMode
 {
-    [UIView animateWithDuration:0.1f
-                          delay:0.0f
-                        options:UIViewAnimationOptionCurveEaseInOut
-                     animations:^{
-                         _violationView.backgroundColor = self.backgroundColor;
-                     }
-                     completion:^(BOOL finished) {
-                     }];
+    super.textColor = _validTextColor;
 }
 
 /**
@@ -314,19 +260,19 @@
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
     NSString *futureString = [textField.text stringByReplacingCharactersInRange:range withString:string];
-    DMCondition *condition = [_validatorTextField.validator checkConditions:futureString];
+    DMConditionCollection *conditions = [_validatorTextField.validator checkConditions:futureString];
     
     // Inform text field about valid state change
-    if (condition == nil)
+    if (conditions == nil)
         [_validatorTextField validatorTextFieldDelegateSuccededConditions:self];
     else
-        [_validatorTextField validatorTextFieldDelegate:self violatedCondition:condition];
+        [_validatorTextField validatorTextFieldDelegate:self violatedConditions:conditions];
     
     // If condition is NULL no condition failed
     if (NO == _validatorTextField.allowViolation
-        || NO == [condition allowViolation])
+        || NO == [conditions conditionAtIndex:0].allowViolation)
     {
-        return condition == nil;
+        return [conditions conditionAtIndex:0] == nil;
     }
     
     // Ask delegate whether should change characters in range
@@ -340,8 +286,8 @@
 {
     if (YES == _validatorTextField.allowViolation)
     {
-        DMCondition *condition = [_validatorTextField.validator checkConditions:_validatorTextField.text];
-        BOOL isValid = condition == nil;
+        DMConditionCollection *conditions = [_validatorTextField.validator checkConditions:_validatorTextField.text];
+        BOOL isValid = conditions == nil;
         if (_lastIsValid != isValid)
         {
             _lastIsValid = isValid;
@@ -350,7 +296,7 @@
             if (isValid)
                 [_validatorTextField validatorTextFieldDelegateSuccededConditions:self];
             else
-                [_validatorTextField validatorTextFieldDelegate:self violatedCondition:condition];
+                [_validatorTextField validatorTextFieldDelegate:self violatedConditions:conditions];
             
             // Inform delegate about valid state change
             if ([_delegate respondsToSelector:@selector(validatorTextField:changedValidState:)])
@@ -359,8 +305,8 @@
             // Inform delegate about violation
             if (!isValid)
             {
-                if ([_delegate respondsToSelector:@selector(validatorTextField:violatedCondition:)])
-                    [_delegate validatorTextField:_validatorTextField violatedCondition:condition];
+                if ([_delegate respondsToSelector:@selector(validatorTextField:violatedConditions:)])
+                    [_delegate validatorTextField:_validatorTextField violatedConditions:conditions];
             }
         }
     }

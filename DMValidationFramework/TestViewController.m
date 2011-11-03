@@ -110,26 +110,29 @@
 {    
     // Set properties of validator text field #1
     // Set the numeric validator to text field #1
-    self.testView.validatorTextField1.validator      = [[DMValidatorNumeric alloc] init];
-    self.testView.validatorTextField1.allowViolation = NO;
-    self.testView.validatorTextField1.delegate       = self;
+    self.testView.validatorTextField1.validator        = [[[DMValidatorNumeric alloc] init] autorelease];
+    self.testView.validatorTextField1.allowViolation   = NO;
+    self.testView.validatorTextField1.delegate         = self;
+    self.testView.validatorTextField1.invalidTextColor = [UIColor orangeColor];
     
     // Set initial test value to test validator text field #2
-    self.testView.validatorTextField2.validator      = [[DMValidatorEmail alloc] init];
-    self.testView.validatorTextField2.allowViolation = YES;
-    self.testView.validatorTextField2.delegate       = self;
-    self.testView.validatorTextField2.text = @"test@devmob.";
+    self.testView.validatorTextField2.validator        = [[[DMValidatorEmail alloc] init] autorelease];
+    self.testView.validatorTextField2.allowViolation   = YES;
+    self.testView.validatorTextField2.delegate         = self;
+    self.testView.validatorTextField2.text             = @"test@devmob.";
+    self.testView.validatorTextField2.invalidTextColor = [UIColor orangeColor];
+    self.testView.validatorTextField2.textColor        = [UIColor greenColor];
     
     // Validate the text field #2 manually after adding text
     [self.testView.validatorTextField2 validate];
     
     // Set initial test value to test validator text field #3
-    self.testView.validatorTextField3.validator            = [[DMValidatorNumeric alloc] init];
+    self.testView.validatorTextField3.validator            = [[[DMValidatorNumeric alloc] init] autorelease];
     self.testView.validatorTextField3.allowViolation       = YES;
     self.testView.validatorTextField3.validateAfterEditing = YES;
     
     // Set project specific properties of validator text field #4
-    self.testView.validatorTextField4.validator      = [[MyProjectValidatorPassword alloc] init];
+    self.testView.validatorTextField4.validator      = [[[MyProjectValidatorPassword alloc] init] autorelease];
     self.testView.validatorTextField4.allowViolation = YES;
 }
 
@@ -165,10 +168,9 @@
  * Called on every violation of the highest prioritised validator condition.
  * Update UI like showing alert messages or disabling buttons.
  */
-- (void)validatorTextField:(DMValidatorTextField *)validatorTextField violatedCondition:(DMCondition *)condition
+- (void)validatorTextField:(DMValidatorTextField *)validatorTextField violatedConditions:(DMConditionCollection *)conditions
 {
-    NSString *violatedConditionString = [condition localizedViolationString];
-    NSLog(@"validatorTextField violatedCondition: %@ %@", condition, violatedConditionString);
+    NSLog(@"validatorTextField violatedConditions:\n%@", conditions);
 }
 
 

@@ -20,9 +20,11 @@
 #import <Foundation/Foundation.h>
 
 
-#pragma mark - Base validator protocol
+#pragma mark - Condition protocol
 
 @protocol DMCondition <NSObject>
+
+@required
 
 /**
  * Check the custom condition.
@@ -42,8 +44,11 @@
 @end
 
 
+#pragma mark - Condition interface
+
 @interface DMCondition : NSObject <DMCondition>
 {
+@private
     BOOL _allowViolation;
 }
 

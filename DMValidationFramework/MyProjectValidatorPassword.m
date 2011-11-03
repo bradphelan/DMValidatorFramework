@@ -37,15 +37,15 @@
         // like MyProjectConditionMaximumLength
         
         /*
-        DMConditionRange* rangeCondition = [[DMConditionRange alloc] init];
+        DMConditionRange* rangeCondition = [[[DMConditionRange alloc] init] autorelease];
         rangeCondition.range             = NSMakeRange(0, 10);
         rangeCondition.allowViolation    = NO;
         [self addCondition:rangeCondition];
          */
         
         // Add conditions, first added has highest priority
-        [self addCondition:[[MyProjectConditionMaximumLength alloc] init]];
-        [self addCondition:[[MyProjectConditionPassword alloc] init]];
+        [self addCondition:[[[MyProjectConditionMaximumLength alloc] init] autorelease]];
+        [self addCondition:[[[MyProjectConditionPassword alloc] init] autorelease]];
     }
     
     return self;
