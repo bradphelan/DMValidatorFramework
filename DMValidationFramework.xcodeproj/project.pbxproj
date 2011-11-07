@@ -39,6 +39,43 @@
 		5BF9803F143FB22000FDEDE4 /* DMCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF9803E143FB22000FDEDE4 /* DMCondition.m */; };
 		5BF98042143FB50C00FDEDE4 /* DMConditionAlphanumeric.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF98041143FB50C00FDEDE4 /* DMConditionAlphanumeric.m */; };
 		5BF98045143FBAE100FDEDE4 /* DMConditionAlphabetic.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF98044143FBAE100FDEDE4 /* DMConditionAlphabetic.m */; };
+		A4C929AB14681C9B00B39F70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4C929A914681C9B00B39F70 /* InfoPlist.strings */; };
+		A4C929B314681C9B00B39F70 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4DC1CE144A2A4E00E3627A /* SenTestingKit.framework */; };
+		A4C929B414681C9B00B39F70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF9800C143F9B6800FDEDE4 /* UIKit.framework */; };
+		A4C929B514681C9B00B39F70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF9800E143F9B6800FDEDE4 /* Foundation.framework */; };
+		A4C929B814681C9B00B39F70 /* DMValidation.framework in Resources */ = {isa = PBXBuildFile; fileRef = A4C929A514681C9B00B39F70 /* DMValidation.framework */; };
+		A4C929BE14681C9B00B39F70 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4C929BC14681C9B00B39F70 /* InfoPlist.strings */; };
+		A4C929C114681C9B00B39F70 /* DMValidationFrameworkStaticTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C929C014681C9B00B39F70 /* DMValidationFrameworkStaticTests.m */; };
+		A4C92A0A14681E6B00B39F70 /* DMBaseCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C929FA14681E6B00B39F70 /* DMBaseCondition.m */; };
+		A4C92A0B14681E6B00B39F70 /* DMCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C929FB14681E6B00B39F70 /* DMCondition.m */; };
+		A4C92A0C14681E6B00B39F70 /* DMConditionAlphabetic.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C929FC14681E6B00B39F70 /* DMConditionAlphabetic.m */; };
+		A4C92A0D14681E6B00B39F70 /* DMConditionAlphanumeric.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C929FD14681E6B00B39F70 /* DMConditionAlphanumeric.m */; };
+		A4C92A0E14681E6B00B39F70 /* DMConditionCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C929FE14681E6B00B39F70 /* DMConditionCollection.m */; };
+		A4C92A0F14681E6B00B39F70 /* DMConditionEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C929FF14681E6B00B39F70 /* DMConditionEmail.m */; };
+		A4C92A1014681E6B00B39F70 /* DMConditionNumeric.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C92A0014681E6B00B39F70 /* DMConditionNumeric.m */; };
+		A4C92A1114681E6B00B39F70 /* DMConditionRange.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C92A0114681E6B00B39F70 /* DMConditionRange.m */; };
+		A4C92A1214681E6B00B39F70 /* DMValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C92A0214681E6B00B39F70 /* DMValidator.m */; };
+		A4C92A1314681E6B00B39F70 /* DMValidatorAlphabetic.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C92A0314681E6B00B39F70 /* DMValidatorAlphabetic.m */; };
+		A4C92A1414681E6B00B39F70 /* DMValidatorAlphanumeric.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C92A0414681E6B00B39F70 /* DMValidatorAlphanumeric.m */; };
+		A4C92A1514681E6B00B39F70 /* DMValidatorEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C92A0514681E6B00B39F70 /* DMValidatorEmail.m */; };
+		A4C92A1614681E6B00B39F70 /* DMValidatorNumeric.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C92A0614681E6B00B39F70 /* DMValidatorNumeric.m */; };
+		A4C92A1714681E6B00B39F70 /* DMValidatorRange.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C92A0714681E6B00B39F70 /* DMValidatorRange.m */; };
+		A4C92A1814681E6B00B39F70 /* DMValidatorTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C92A0814681E6B00B39F70 /* DMValidatorTextField.m */; };
+		A4FBB2A5146822C3004A9AC7 /* DMBaseCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C92A2B1468203C00B39F70 /* DMBaseCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4FBB2A6146822C3004A9AC7 /* DMCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C92A2D1468203C00B39F70 /* DMCondition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4FBB2A7146822C3004A9AC7 /* DMConditionAlphabetic.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C92A2F1468203C00B39F70 /* DMConditionAlphabetic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4FBB2A8146822C3004A9AC7 /* DMConditionAlphanumeric.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C92A311468203C00B39F70 /* DMConditionAlphanumeric.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4FBB2A9146822C3004A9AC7 /* DMConditionCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C92A331468203C00B39F70 /* DMConditionCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4FBB2AA146822C3004A9AC7 /* DMConditionEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C92A351468203C00B39F70 /* DMConditionEmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4FBB2AB146822C3004A9AC7 /* DMConditionNumeric.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C92A371468203C00B39F70 /* DMConditionNumeric.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4FBB2AC146822C3004A9AC7 /* DMConditionRange.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C92A391468203C00B39F70 /* DMConditionRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4FBB2AD146822C3004A9AC7 /* DMValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C92A3D1468203C00B39F70 /* DMValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4FBB2AE146822C3004A9AC7 /* DMValidatorAlphabetic.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C92A3F1468203C00B39F70 /* DMValidatorAlphabetic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4FBB2AF146822C3004A9AC7 /* DMValidatorAlphanumeric.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C92A411468203C00B39F70 /* DMValidatorAlphanumeric.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4FBB2B0146822C3004A9AC7 /* DMValidatorEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C92A431468203C00B39F70 /* DMValidatorEmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4FBB2B1146822C3004A9AC7 /* DMValidatorNumeric.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C92A451468203C00B39F70 /* DMValidatorNumeric.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4FBB2B2146822C3004A9AC7 /* DMValidatorRange.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C92A471468203C00B39F70 /* DMValidatorRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4FBB2B3146822C3004A9AC7 /* DMValidatorTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C92A491468203C00B39F70 /* DMValidatorTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +85,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5BF98007143F9B6800FDEDE4;
 			remoteInfo = DMValidationFramework;
+		};
+		A4C929B614681C9B00B39F70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BF97FFF143F9B6800FDEDE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4C929A414681C9B00B39F70;
+			remoteInfo = DMValidationFrameworkStatic;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -112,6 +156,98 @@
 		5BF98041143FB50C00FDEDE4 /* DMConditionAlphanumeric.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMConditionAlphanumeric.m; sourceTree = "<group>"; };
 		5BF98043143FBAE100FDEDE4 /* DMConditionAlphabetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMConditionAlphabetic.h; sourceTree = "<group>"; };
 		5BF98044143FBAE100FDEDE4 /* DMConditionAlphabetic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMConditionAlphabetic.m; sourceTree = "<group>"; };
+		A4C929A514681C9B00B39F70 /* DMValidation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMValidation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4C929A814681C9B00B39F70 /* DMValidationFrameworkStatic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DMValidationFrameworkStatic-Info.plist"; sourceTree = "<group>"; };
+		A4C929AA14681C9B00B39F70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4C929AC14681C9B00B39F70 /* DMValidationFrameworkStatic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMValidationFrameworkStatic-Prefix.pch"; sourceTree = "<group>"; };
+		A4C929B214681C9B00B39F70 /* DMValidationFrameworkStaticTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMValidationFrameworkStaticTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4C929BB14681C9B00B39F70 /* DMValidationFrameworkStaticTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DMValidationFrameworkStaticTests-Info.plist"; sourceTree = "<group>"; };
+		A4C929BD14681C9B00B39F70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4C929BF14681C9B00B39F70 /* DMValidationFrameworkStaticTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMValidationFrameworkStaticTests.h; sourceTree = "<group>"; };
+		A4C929C014681C9B00B39F70 /* DMValidationFrameworkStaticTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMValidationFrameworkStaticTests.m; sourceTree = "<group>"; };
+		A4C929F914681E6B00B39F70 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = DMValidationFramework/AppDelegate.m; sourceTree = "<group>"; };
+		A4C929FA14681E6B00B39F70 /* DMBaseCondition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DMBaseCondition.m; path = DMValidationFramework/DMBaseCondition.m; sourceTree = "<group>"; };
+		A4C929FB14681E6B00B39F70 /* DMCondition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DMCondition.m; path = DMValidationFramework/DMCondition.m; sourceTree = "<group>"; };
+		A4C929FC14681E6B00B39F70 /* DMConditionAlphabetic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DMConditionAlphabetic.m; path = DMValidationFramework/DMConditionAlphabetic.m; sourceTree = "<group>"; };
+		A4C929FD14681E6B00B39F70 /* DMConditionAlphanumeric.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DMConditionAlphanumeric.m; path = DMValidationFramework/DMConditionAlphanumeric.m; sourceTree = "<group>"; };
+		A4C929FE14681E6B00B39F70 /* DMConditionCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DMConditionCollection.m; path = DMValidationFramework/DMConditionCollection.m; sourceTree = "<group>"; };
+		A4C929FF14681E6B00B39F70 /* DMConditionEmail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DMConditionEmail.m; path = DMValidationFramework/DMConditionEmail.m; sourceTree = "<group>"; };
+		A4C92A0014681E6B00B39F70 /* DMConditionNumeric.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DMConditionNumeric.m; path = DMValidationFramework/DMConditionNumeric.m; sourceTree = "<group>"; };
+		A4C92A0114681E6B00B39F70 /* DMConditionRange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DMConditionRange.m; path = DMValidationFramework/DMConditionRange.m; sourceTree = "<group>"; };
+		A4C92A0214681E6B00B39F70 /* DMValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DMValidator.m; path = DMValidationFramework/DMValidator.m; sourceTree = "<group>"; };
+		A4C92A0314681E6B00B39F70 /* DMValidatorAlphabetic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DMValidatorAlphabetic.m; path = DMValidationFramework/DMValidatorAlphabetic.m; sourceTree = "<group>"; };
+		A4C92A0414681E6B00B39F70 /* DMValidatorAlphanumeric.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DMValidatorAlphanumeric.m; path = DMValidationFramework/DMValidatorAlphanumeric.m; sourceTree = "<group>"; };
+		A4C92A0514681E6B00B39F70 /* DMValidatorEmail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DMValidatorEmail.m; path = DMValidationFramework/DMValidatorEmail.m; sourceTree = "<group>"; };
+		A4C92A0614681E6B00B39F70 /* DMValidatorNumeric.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DMValidatorNumeric.m; path = DMValidationFramework/DMValidatorNumeric.m; sourceTree = "<group>"; };
+		A4C92A0714681E6B00B39F70 /* DMValidatorRange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DMValidatorRange.m; path = DMValidationFramework/DMValidatorRange.m; sourceTree = "<group>"; };
+		A4C92A0814681E6B00B39F70 /* DMValidatorTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DMValidatorTextField.m; path = DMValidationFramework/DMValidatorTextField.m; sourceTree = "<group>"; };
+		A4C92A291468203C00B39F70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A4C92A2A1468203C00B39F70 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A4C92A2B1468203C00B39F70 /* DMBaseCondition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMBaseCondition.h; sourceTree = "<group>"; };
+		A4C92A2C1468203C00B39F70 /* DMBaseCondition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMBaseCondition.m; sourceTree = "<group>"; };
+		A4C92A2D1468203C00B39F70 /* DMCondition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMCondition.h; sourceTree = "<group>"; };
+		A4C92A2E1468203C00B39F70 /* DMCondition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMCondition.m; sourceTree = "<group>"; };
+		A4C92A2F1468203C00B39F70 /* DMConditionAlphabetic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMConditionAlphabetic.h; sourceTree = "<group>"; };
+		A4C92A301468203C00B39F70 /* DMConditionAlphabetic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMConditionAlphabetic.m; sourceTree = "<group>"; };
+		A4C92A311468203C00B39F70 /* DMConditionAlphanumeric.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMConditionAlphanumeric.h; sourceTree = "<group>"; };
+		A4C92A321468203C00B39F70 /* DMConditionAlphanumeric.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMConditionAlphanumeric.m; sourceTree = "<group>"; };
+		A4C92A331468203C00B39F70 /* DMConditionCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMConditionCollection.h; sourceTree = "<group>"; };
+		A4C92A341468203C00B39F70 /* DMConditionCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMConditionCollection.m; sourceTree = "<group>"; };
+		A4C92A351468203C00B39F70 /* DMConditionEmail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMConditionEmail.h; sourceTree = "<group>"; };
+		A4C92A361468203C00B39F70 /* DMConditionEmail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMConditionEmail.m; sourceTree = "<group>"; };
+		A4C92A371468203C00B39F70 /* DMConditionNumeric.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMConditionNumeric.h; sourceTree = "<group>"; };
+		A4C92A381468203C00B39F70 /* DMConditionNumeric.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMConditionNumeric.m; sourceTree = "<group>"; };
+		A4C92A391468203C00B39F70 /* DMConditionRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMConditionRange.h; sourceTree = "<group>"; };
+		A4C92A3A1468203C00B39F70 /* DMConditionRange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMConditionRange.m; sourceTree = "<group>"; };
+		A4C92A3B1468203C00B39F70 /* DMValidationFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DMValidationFramework-Info.plist"; sourceTree = "<group>"; };
+		A4C92A3C1468203C00B39F70 /* DMValidationFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMValidationFramework-Prefix.pch"; sourceTree = "<group>"; };
+		A4C92A3D1468203C00B39F70 /* DMValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMValidator.h; sourceTree = "<group>"; };
+		A4C92A3E1468203C00B39F70 /* DMValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMValidator.m; sourceTree = "<group>"; };
+		A4C92A3F1468203C00B39F70 /* DMValidatorAlphabetic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMValidatorAlphabetic.h; sourceTree = "<group>"; };
+		A4C92A401468203C00B39F70 /* DMValidatorAlphabetic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMValidatorAlphabetic.m; sourceTree = "<group>"; };
+		A4C92A411468203C00B39F70 /* DMValidatorAlphanumeric.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMValidatorAlphanumeric.h; sourceTree = "<group>"; };
+		A4C92A421468203C00B39F70 /* DMValidatorAlphanumeric.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMValidatorAlphanumeric.m; sourceTree = "<group>"; };
+		A4C92A431468203C00B39F70 /* DMValidatorEmail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMValidatorEmail.h; sourceTree = "<group>"; };
+		A4C92A441468203C00B39F70 /* DMValidatorEmail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMValidatorEmail.m; sourceTree = "<group>"; };
+		A4C92A451468203C00B39F70 /* DMValidatorNumeric.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMValidatorNumeric.h; sourceTree = "<group>"; };
+		A4C92A461468203C00B39F70 /* DMValidatorNumeric.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMValidatorNumeric.m; sourceTree = "<group>"; };
+		A4C92A471468203C00B39F70 /* DMValidatorRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMValidatorRange.h; sourceTree = "<group>"; };
+		A4C92A481468203C00B39F70 /* DMValidatorRange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMValidatorRange.m; sourceTree = "<group>"; };
+		A4C92A491468203C00B39F70 /* DMValidatorTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMValidatorTextField.h; sourceTree = "<group>"; };
+		A4C92A4A1468203C00B39F70 /* DMValidatorTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMValidatorTextField.m; sourceTree = "<group>"; };
+		A4C92A4C1468203C00B39F70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4C92A4F1468203C00B39F70 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A4C92A501468203C00B39F70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A4C92A511468203C00B39F70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A4C92A521468203C00B39F70 /* MyProjectConditionMaximumLength.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProjectConditionMaximumLength.h; sourceTree = "<group>"; };
+		A4C92A531468203C00B39F70 /* MyProjectConditionMaximumLength.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyProjectConditionMaximumLength.m; sourceTree = "<group>"; };
+		A4C92A541468203C00B39F70 /* MyProjectConditionPassword.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProjectConditionPassword.h; sourceTree = "<group>"; };
+		A4C92A551468203C00B39F70 /* MyProjectConditionPassword.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyProjectConditionPassword.m; sourceTree = "<group>"; };
+		A4C92A561468203C00B39F70 /* MyProjectConditionPostcodeUK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProjectConditionPostcodeUK.h; sourceTree = "<group>"; };
+		A4C92A571468203C00B39F70 /* MyProjectConditionPostcodeUK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyProjectConditionPostcodeUK.m; sourceTree = "<group>"; };
+		A4C92A581468203C00B39F70 /* MyProjectValidatorPassword.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProjectValidatorPassword.h; sourceTree = "<group>"; };
+		A4C92A591468203C00B39F70 /* MyProjectValidatorPassword.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyProjectValidatorPassword.m; sourceTree = "<group>"; };
+		A4C92A5A1468203C00B39F70 /* MyProjectValidatorPostcodeUK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProjectValidatorPostcodeUK.h; sourceTree = "<group>"; };
+		A4C92A5B1468203C00B39F70 /* MyProjectValidatorPostcodeUK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyProjectValidatorPostcodeUK.m; sourceTree = "<group>"; };
+		A4C92A5C1468203C00B39F70 /* TestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		A4C92A5D1468203C00B39F70 /* TestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
+		A4C92A5E1468203C00B39F70 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		A4C92A5F1468203C00B39F70 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		A4C92A601468203C00B39F70 /* DMBaseCondition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DMBaseCondition.h; path = DMValidationFramework/DMBaseCondition.h; sourceTree = "<group>"; };
+		A4C92A611468203C00B39F70 /* DMCondition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DMCondition.h; path = DMValidationFramework/DMCondition.h; sourceTree = "<group>"; };
+		A4C92A621468203C00B39F70 /* DMConditionAlphabetic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DMConditionAlphabetic.h; path = DMValidationFramework/DMConditionAlphabetic.h; sourceTree = "<group>"; };
+		A4C92A631468203C00B39F70 /* DMConditionAlphanumeric.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DMConditionAlphanumeric.h; path = DMValidationFramework/DMConditionAlphanumeric.h; sourceTree = "<group>"; };
+		A4C92A641468203C00B39F70 /* DMConditionCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DMConditionCollection.h; path = DMValidationFramework/DMConditionCollection.h; sourceTree = "<group>"; };
+		A4C92A651468203C00B39F70 /* DMConditionEmail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DMConditionEmail.h; path = DMValidationFramework/DMConditionEmail.h; sourceTree = "<group>"; };
+		A4C92A661468203C00B39F70 /* DMConditionNumeric.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DMConditionNumeric.h; path = DMValidationFramework/DMConditionNumeric.h; sourceTree = "<group>"; };
+		A4C92A671468203C00B39F70 /* DMConditionRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DMConditionRange.h; path = DMValidationFramework/DMConditionRange.h; sourceTree = "<group>"; };
+		A4C92A681468203C00B39F70 /* DMValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DMValidator.h; path = DMValidationFramework/DMValidator.h; sourceTree = "<group>"; };
+		A4C92A691468203C00B39F70 /* DMValidatorAlphabetic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DMValidatorAlphabetic.h; path = DMValidationFramework/DMValidatorAlphabetic.h; sourceTree = "<group>"; };
+		A4C92A6A1468203C00B39F70 /* DMValidatorAlphanumeric.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DMValidatorAlphanumeric.h; path = DMValidationFramework/DMValidatorAlphanumeric.h; sourceTree = "<group>"; };
+		A4C92A6B1468203C00B39F70 /* DMValidatorEmail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DMValidatorEmail.h; path = DMValidationFramework/DMValidatorEmail.h; sourceTree = "<group>"; };
+		A4C92A6C1468203C00B39F70 /* DMValidatorNumeric.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DMValidatorNumeric.h; path = DMValidationFramework/DMValidatorNumeric.h; sourceTree = "<group>"; };
+		A4C92A6D1468203C00B39F70 /* DMValidatorRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DMValidatorRange.h; path = DMValidationFramework/DMValidatorRange.h; sourceTree = "<group>"; };
+		A4C92A6E1468203C00B39F70 /* DMValidatorTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DMValidatorTextField.h; path = DMValidationFramework/DMValidatorTextField.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +267,23 @@
 			files = (
 				5BF9800D143F9B6800FDEDE4 /* UIKit.framework in Frameworks */,
 				5BF9800F143F9B6800FDEDE4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C929A014681C9B00B39F70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C929AE14681C9B00B39F70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C929B314681C9B00B39F70 /* SenTestingKit.framework in Frameworks */,
+				A4C929B414681C9B00B39F70 /* UIKit.framework in Frameworks */,
+				A4C929B514681C9B00B39F70 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,8 +354,42 @@
 		5BF97FFD143F9B6800FDEDE4 = {
 			isa = PBXGroup;
 			children = (
+				A4C92A281468203C00B39F70 /* DMValidationFramework */,
+				A4C92A601468203C00B39F70 /* DMBaseCondition.h */,
+				A4C92A611468203C00B39F70 /* DMCondition.h */,
+				A4C92A621468203C00B39F70 /* DMConditionAlphabetic.h */,
+				A4C92A631468203C00B39F70 /* DMConditionAlphanumeric.h */,
+				A4C92A641468203C00B39F70 /* DMConditionCollection.h */,
+				A4C92A651468203C00B39F70 /* DMConditionEmail.h */,
+				A4C92A661468203C00B39F70 /* DMConditionNumeric.h */,
+				A4C92A671468203C00B39F70 /* DMConditionRange.h */,
+				A4C92A681468203C00B39F70 /* DMValidator.h */,
+				A4C92A691468203C00B39F70 /* DMValidatorAlphabetic.h */,
+				A4C92A6A1468203C00B39F70 /* DMValidatorAlphanumeric.h */,
+				A4C92A6B1468203C00B39F70 /* DMValidatorEmail.h */,
+				A4C92A6C1468203C00B39F70 /* DMValidatorNumeric.h */,
+				A4C92A6D1468203C00B39F70 /* DMValidatorRange.h */,
+				A4C92A6E1468203C00B39F70 /* DMValidatorTextField.h */,
+				A4C929F914681E6B00B39F70 /* AppDelegate.m */,
+				A4C929FA14681E6B00B39F70 /* DMBaseCondition.m */,
+				A4C929FB14681E6B00B39F70 /* DMCondition.m */,
+				A4C929FC14681E6B00B39F70 /* DMConditionAlphabetic.m */,
+				A4C929FD14681E6B00B39F70 /* DMConditionAlphanumeric.m */,
+				A4C929FE14681E6B00B39F70 /* DMConditionCollection.m */,
+				A4C929FF14681E6B00B39F70 /* DMConditionEmail.m */,
+				A4C92A0014681E6B00B39F70 /* DMConditionNumeric.m */,
+				A4C92A0114681E6B00B39F70 /* DMConditionRange.m */,
+				A4C92A0214681E6B00B39F70 /* DMValidator.m */,
+				A4C92A0314681E6B00B39F70 /* DMValidatorAlphabetic.m */,
+				A4C92A0414681E6B00B39F70 /* DMValidatorAlphanumeric.m */,
+				A4C92A0514681E6B00B39F70 /* DMValidatorEmail.m */,
+				A4C92A0614681E6B00B39F70 /* DMValidatorNumeric.m */,
+				A4C92A0714681E6B00B39F70 /* DMValidatorRange.m */,
+				A4C92A0814681E6B00B39F70 /* DMValidatorTextField.m */,
 				5BF98010143F9B6800FDEDE4 /* DMValidationFramework */,
 				5B4DC1B5144A280400E3627A /* DMValidationFrameworkUnitTests */,
+				A4C929A614681C9B00B39F70 /* DMValidationFrameworkStatic */,
+				A4C929B914681C9B00B39F70 /* DMValidationFrameworkStaticTests */,
 				5BF9800B143F9B6800FDEDE4 /* Frameworks */,
 				5BF98009143F9B6800FDEDE4 /* Products */,
 			);
@@ -213,6 +400,8 @@
 			children = (
 				5BF98008143F9B6800FDEDE4 /* DMValidationFramework.app */,
 				5B4DC1B0144A280400E3627A /* DMValidationFrameworkUnitTests.octest */,
+				A4C929A514681C9B00B39F70 /* DMValidation.framework */,
+				A4C929B214681C9B00B39F70 /* DMValidationFrameworkStaticTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -290,7 +479,135 @@
 			name = "Custom Conditions";
 			sourceTree = "<group>";
 		};
+		A4C929A614681C9B00B39F70 /* DMValidationFrameworkStatic */ = {
+			isa = PBXGroup;
+			children = (
+				A4C929A714681C9B00B39F70 /* Supporting Files */,
+			);
+			path = DMValidationFrameworkStatic;
+			sourceTree = "<group>";
+		};
+		A4C929A714681C9B00B39F70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4C929A814681C9B00B39F70 /* DMValidationFrameworkStatic-Info.plist */,
+				A4C929A914681C9B00B39F70 /* InfoPlist.strings */,
+				A4C929AC14681C9B00B39F70 /* DMValidationFrameworkStatic-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4C929B914681C9B00B39F70 /* DMValidationFrameworkStaticTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4C929BF14681C9B00B39F70 /* DMValidationFrameworkStaticTests.h */,
+				A4C929C014681C9B00B39F70 /* DMValidationFrameworkStaticTests.m */,
+				A4C929BA14681C9B00B39F70 /* Supporting Files */,
+			);
+			path = DMValidationFrameworkStaticTests;
+			sourceTree = "<group>";
+		};
+		A4C929BA14681C9B00B39F70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4C929BB14681C9B00B39F70 /* DMValidationFrameworkStaticTests-Info.plist */,
+				A4C929BC14681C9B00B39F70 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4C92A281468203C00B39F70 /* DMValidationFramework */ = {
+			isa = PBXGroup;
+			children = (
+				A4C92A291468203C00B39F70 /* AppDelegate.h */,
+				A4C92A2A1468203C00B39F70 /* AppDelegate.m */,
+				A4C92A2B1468203C00B39F70 /* DMBaseCondition.h */,
+				A4C92A2C1468203C00B39F70 /* DMBaseCondition.m */,
+				A4C92A2D1468203C00B39F70 /* DMCondition.h */,
+				A4C92A2E1468203C00B39F70 /* DMCondition.m */,
+				A4C92A2F1468203C00B39F70 /* DMConditionAlphabetic.h */,
+				A4C92A301468203C00B39F70 /* DMConditionAlphabetic.m */,
+				A4C92A311468203C00B39F70 /* DMConditionAlphanumeric.h */,
+				A4C92A321468203C00B39F70 /* DMConditionAlphanumeric.m */,
+				A4C92A331468203C00B39F70 /* DMConditionCollection.h */,
+				A4C92A341468203C00B39F70 /* DMConditionCollection.m */,
+				A4C92A351468203C00B39F70 /* DMConditionEmail.h */,
+				A4C92A361468203C00B39F70 /* DMConditionEmail.m */,
+				A4C92A371468203C00B39F70 /* DMConditionNumeric.h */,
+				A4C92A381468203C00B39F70 /* DMConditionNumeric.m */,
+				A4C92A391468203C00B39F70 /* DMConditionRange.h */,
+				A4C92A3A1468203C00B39F70 /* DMConditionRange.m */,
+				A4C92A3B1468203C00B39F70 /* DMValidationFramework-Info.plist */,
+				A4C92A3C1468203C00B39F70 /* DMValidationFramework-Prefix.pch */,
+				A4C92A3D1468203C00B39F70 /* DMValidator.h */,
+				A4C92A3E1468203C00B39F70 /* DMValidator.m */,
+				A4C92A3F1468203C00B39F70 /* DMValidatorAlphabetic.h */,
+				A4C92A401468203C00B39F70 /* DMValidatorAlphabetic.m */,
+				A4C92A411468203C00B39F70 /* DMValidatorAlphanumeric.h */,
+				A4C92A421468203C00B39F70 /* DMValidatorAlphanumeric.m */,
+				A4C92A431468203C00B39F70 /* DMValidatorEmail.h */,
+				A4C92A441468203C00B39F70 /* DMValidatorEmail.m */,
+				A4C92A451468203C00B39F70 /* DMValidatorNumeric.h */,
+				A4C92A461468203C00B39F70 /* DMValidatorNumeric.m */,
+				A4C92A471468203C00B39F70 /* DMValidatorRange.h */,
+				A4C92A481468203C00B39F70 /* DMValidatorRange.m */,
+				A4C92A491468203C00B39F70 /* DMValidatorTextField.h */,
+				A4C92A4A1468203C00B39F70 /* DMValidatorTextField.m */,
+				A4C92A4B1468203C00B39F70 /* InfoPlist.strings */,
+				A4C92A4D1468203C00B39F70 /* language */,
+				A4C92A511468203C00B39F70 /* main.m */,
+				A4C92A521468203C00B39F70 /* MyProjectConditionMaximumLength.h */,
+				A4C92A531468203C00B39F70 /* MyProjectConditionMaximumLength.m */,
+				A4C92A541468203C00B39F70 /* MyProjectConditionPassword.h */,
+				A4C92A551468203C00B39F70 /* MyProjectConditionPassword.m */,
+				A4C92A561468203C00B39F70 /* MyProjectConditionPostcodeUK.h */,
+				A4C92A571468203C00B39F70 /* MyProjectConditionPostcodeUK.m */,
+				A4C92A581468203C00B39F70 /* MyProjectValidatorPassword.h */,
+				A4C92A591468203C00B39F70 /* MyProjectValidatorPassword.m */,
+				A4C92A5A1468203C00B39F70 /* MyProjectValidatorPostcodeUK.h */,
+				A4C92A5B1468203C00B39F70 /* MyProjectValidatorPostcodeUK.m */,
+				A4C92A5C1468203C00B39F70 /* TestView.h */,
+				A4C92A5D1468203C00B39F70 /* TestView.m */,
+				A4C92A5E1468203C00B39F70 /* TestViewController.h */,
+				A4C92A5F1468203C00B39F70 /* TestViewController.m */,
+			);
+			path = DMValidationFramework;
+			sourceTree = "<group>";
+		};
+		A4C92A4D1468203C00B39F70 /* language */ = {
+			isa = PBXGroup;
+			children = (
+				A4C92A4E1468203C00B39F70 /* Localizable.strings */,
+			);
+			path = language;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A4C929A114681C9B00B39F70 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4FBB2A5146822C3004A9AC7 /* DMBaseCondition.h in Headers */,
+				A4FBB2A6146822C3004A9AC7 /* DMCondition.h in Headers */,
+				A4FBB2A7146822C3004A9AC7 /* DMConditionAlphabetic.h in Headers */,
+				A4FBB2A8146822C3004A9AC7 /* DMConditionAlphanumeric.h in Headers */,
+				A4FBB2A9146822C3004A9AC7 /* DMConditionCollection.h in Headers */,
+				A4FBB2AA146822C3004A9AC7 /* DMConditionEmail.h in Headers */,
+				A4FBB2AB146822C3004A9AC7 /* DMConditionNumeric.h in Headers */,
+				A4FBB2AC146822C3004A9AC7 /* DMConditionRange.h in Headers */,
+				A4FBB2AD146822C3004A9AC7 /* DMValidator.h in Headers */,
+				A4FBB2AE146822C3004A9AC7 /* DMValidatorAlphabetic.h in Headers */,
+				A4FBB2AF146822C3004A9AC7 /* DMValidatorAlphanumeric.h in Headers */,
+				A4FBB2B0146822C3004A9AC7 /* DMValidatorEmail.h in Headers */,
+				A4FBB2B1146822C3004A9AC7 /* DMValidatorNumeric.h in Headers */,
+				A4FBB2B2146822C3004A9AC7 /* DMValidatorRange.h in Headers */,
+				A4FBB2B3146822C3004A9AC7 /* DMValidatorTextField.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		5B4DC1AF144A280400E3627A /* DMValidationFrameworkUnitTests */ = {
@@ -329,6 +646,45 @@
 			productReference = 5BF98008143F9B6800FDEDE4 /* DMValidationFramework.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A4C929A414681C9B00B39F70 /* DMValidation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4C929C614681C9B00B39F70 /* Build configuration list for PBXNativeTarget "DMValidation" */;
+			buildPhases = (
+				A4C9299E14681C9B00B39F70 /* ShellScript */,
+				A4C9299F14681C9B00B39F70 /* Sources */,
+				A4C929A014681C9B00B39F70 /* Frameworks */,
+				A4C929A114681C9B00B39F70 /* Headers */,
+				A4C929A214681C9B00B39F70 /* Resources */,
+				A4C929A314681C9B00B39F70 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DMValidation;
+			productName = DMValidationFrameworkStatic;
+			productReference = A4C929A514681C9B00B39F70 /* DMValidation.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A4C929B114681C9B00B39F70 /* DMValidationFrameworkStaticTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4C929C714681C9B00B39F70 /* Build configuration list for PBXNativeTarget "DMValidationFrameworkStaticTests" */;
+			buildPhases = (
+				A4C929AD14681C9B00B39F70 /* Sources */,
+				A4C929AE14681C9B00B39F70 /* Frameworks */,
+				A4C929AF14681C9B00B39F70 /* Resources */,
+				A4C929B014681C9B00B39F70 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4C929B714681C9B00B39F70 /* PBXTargetDependency */,
+			);
+			name = DMValidationFrameworkStaticTests;
+			productName = DMValidationFrameworkStaticTests;
+			productReference = A4C929B214681C9B00B39F70 /* DMValidationFrameworkStaticTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -355,6 +711,8 @@
 			targets = (
 				5BF98007143F9B6800FDEDE4 /* DMValidationFramework */,
 				5B4DC1AF144A280400E3627A /* DMValidationFrameworkUnitTests */,
+				A4C929A414681C9B00B39F70 /* DMValidation */,
+				A4C929B114681C9B00B39F70 /* DMValidationFrameworkStaticTests */,
 			);
 		};
 /* End PBXProject section */
@@ -377,10 +735,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A4C929A214681C9B00B39F70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C929AB14681C9B00B39F70 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C929AF14681C9B00B39F70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C929B814681C9B00B39F70 /* DMValidation.framework in Resources */,
+				A4C929BE14681C9B00B39F70 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		5B4DC1AE144A280400E3627A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		A4C9299E14681C9B00B39F70 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n   [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n";
+		};
+		A4C929A314681C9B00B39F70 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\n\n# Make sure the other platform gets built\n\necho \"Build other platform\"\n\necho xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n\n\n# Build the fat static library binary\n\necho \"Create universal static library\"\n\necho \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n\"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n\necho mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nmv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n\n\n# Build framework structure\n\necho \"Build symlinks\"\n\necho ln -sf A \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Versions/Current\"\nln -sf A \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Versions/Current\"\necho ln -sf Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Headers\"\nln -sf Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Headers\"\necho ln -sf Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Resources\"\nln -sf Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Resources\"\necho ln -sf \"Versions/Current/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${EXECUTABLE_NAME}\"\nln -sf \"Versions/Current/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${EXECUTABLE_NAME}\"\n\n\n# Link to binary for unit tests\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/.fake_fw_testing.framework\"\nln -sf \"../${WRAPPER_NAME}/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/.fake_fw_testing.framework/.fake_fw_testing\"\n\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\n# Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n\necho \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n\necho rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nrm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\necho cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\ncp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n";
+		};
+		A4C929B014681C9B00B39F70 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -434,6 +848,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A4C9299F14681C9B00B39F70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C92A0A14681E6B00B39F70 /* DMBaseCondition.m in Sources */,
+				A4C92A0B14681E6B00B39F70 /* DMCondition.m in Sources */,
+				A4C92A0C14681E6B00B39F70 /* DMConditionAlphabetic.m in Sources */,
+				A4C92A0D14681E6B00B39F70 /* DMConditionAlphanumeric.m in Sources */,
+				A4C92A0E14681E6B00B39F70 /* DMConditionCollection.m in Sources */,
+				A4C92A0F14681E6B00B39F70 /* DMConditionEmail.m in Sources */,
+				A4C92A1014681E6B00B39F70 /* DMConditionNumeric.m in Sources */,
+				A4C92A1114681E6B00B39F70 /* DMConditionRange.m in Sources */,
+				A4C92A1214681E6B00B39F70 /* DMValidator.m in Sources */,
+				A4C92A1314681E6B00B39F70 /* DMValidatorAlphabetic.m in Sources */,
+				A4C92A1414681E6B00B39F70 /* DMValidatorAlphanumeric.m in Sources */,
+				A4C92A1514681E6B00B39F70 /* DMValidatorEmail.m in Sources */,
+				A4C92A1614681E6B00B39F70 /* DMValidatorNumeric.m in Sources */,
+				A4C92A1714681E6B00B39F70 /* DMValidatorRange.m in Sources */,
+				A4C92A1814681E6B00B39F70 /* DMValidatorTextField.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C929AD14681C9B00B39F70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C929C114681C9B00B39F70 /* DMValidationFrameworkStaticTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -441,6 +885,11 @@
 			isa = PBXTargetDependency;
 			target = 5BF98007143F9B6800FDEDE4 /* DMValidationFramework */;
 			targetProxy = 5B4DC1CC144A2A3C00E3627A /* PBXContainerItemProxy */;
+		};
+		A4C929B714681C9B00B39F70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4C929A414681C9B00B39F70 /* DMValidation */;
+			targetProxy = A4C929B614681C9B00B39F70 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -469,6 +918,39 @@
 				5BF98014143F9B6800FDEDE4 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A4C929A914681C9B00B39F70 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4C929AA14681C9B00B39F70 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A4C929BC14681C9B00B39F70 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4C929BD14681C9B00B39F70 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A4C92A4B1468203C00B39F70 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4C92A4C1468203C00B39F70 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A4C92A4E1468203C00B39F70 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4C92A4F1468203C00B39F70 /* de */,
+				A4C92A501468203C00B39F70 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -573,6 +1055,100 @@
 			};
 			name = Release;
 		};
+		A4C929C214681C9B00B39F70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
+				DEAD_CODE_STRIPPING = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMValidationFrameworkStatic/DMValidationFrameworkStatic-Prefix.pch";
+				INFOPLIST_FILE = "DMValidationFrameworkStatic/DMValidationFrameworkStatic-Info.plist";
+				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				OTHER_CFLAGS = "-fno-objc-arc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		A4C929C314681C9B00B39F70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
+				DEAD_CODE_STRIPPING = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMValidationFrameworkStatic/DMValidationFrameworkStatic-Prefix.pch";
+				INFOPLIST_FILE = "DMValidationFrameworkStatic/DMValidationFrameworkStatic-Info.plist";
+				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				OTHER_CFLAGS = "-fno-objc-arc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		A4C929C414681C9B00B39F70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMValidationFrameworkStatic/DMValidationFrameworkStatic-Prefix.pch";
+				INFOPLIST_FILE = "DMValidationFrameworkStaticTests/DMValidationFrameworkStaticTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					.fake_fw_testing,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A4C929C514681C9B00B39F70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMValidationFrameworkStatic/DMValidationFrameworkStatic-Prefix.pch";
+				INFOPLIST_FILE = "DMValidationFrameworkStaticTests/DMValidationFrameworkStaticTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					.fake_fw_testing,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -599,6 +1175,24 @@
 			buildConfigurations = (
 				5BF9801F143F9B6800FDEDE4 /* Debug */,
 				5BF98020143F9B6800FDEDE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4C929C614681C9B00B39F70 /* Build configuration list for PBXNativeTarget "DMValidation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4C929C214681C9B00B39F70 /* Debug */,
+				A4C929C314681C9B00B39F70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4C929C714681C9B00B39F70 /* Build configuration list for PBXNativeTarget "DMValidationFrameworkStaticTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4C929C414681C9B00B39F70 /* Debug */,
+				A4C929C514681C9B00B39F70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
