@@ -22,7 +22,7 @@
 #import "DMValidator.h"
 
 
-#pragma mark - Base validator interface
+#pragma mark - Validator interface
 
 @interface MyProjectValidatorPostcodeUK : DMValidator
 {
